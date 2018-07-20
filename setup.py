@@ -8,9 +8,10 @@ with open("README.md", "r") as f:
 
 setup(
     name="exceptive",
-    version="0.1.0a0",
+    version="0.1.1",
     description="Exceptive is a Python library that makes exception handling more programmatic and debuggable.",
     long_description=LONG_DESC,
+    long_description_content_type="text/markdown",
     author="Eray Erdin",
     author_email="eraygezer.94@gmail.com",
     url="https://github.com/erayerdin/exceptive",
