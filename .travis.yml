@@ -4,6 +4,7 @@ python:
   - "3.5"
   - "3.6"
 install:
-  pip install nose coverage
+  pip install nose coverage coveralls
 script:
-  - nosetests
+  - nosetests --cover-branches --with-coverage --cover-erase --verbose --cover-package=exceptive
+after_success: coveralls
