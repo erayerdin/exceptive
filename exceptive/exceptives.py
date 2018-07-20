@@ -1,7 +1,12 @@
 """
 This module contains all exceptive types.
 """
-import typing
+try:
+    import typing
+except ImportError:
+    class Typing:
+        Any = None
+    typing = Typing
 
 
 class BaseExceptive:
@@ -15,7 +20,7 @@ class BaseExceptive:
         """
         pass
 
-    def except_else(self, exception: AttributeError) -> typing.Any:
+    def except_else(self, exception: BaseException) -> typing.Any:
         """
         This function runs if the exception is not registered.
 
@@ -35,4 +40,4 @@ class MethodicExceptive(BaseExceptive):
                 func = getattr(self, exception_method_string)
                 return func(e1)
             except AttributeError as e2:
-                return self.except_else(e2)
+                return self.except_else(e1)

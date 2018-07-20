@@ -18,7 +18,7 @@ setup(
     license="Apache License 2.0",
     packages=["exceptive"],
     include_package_data=True,
-    tests_require=["nose", "coverage"],
+    tests_require=["nose", "coverage", "tox"],
     zip_safe=False,
     test_suite="tests.runtests",
     classifiers=[
