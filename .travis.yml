@@ -6,4 +6,4 @@ python:
 install:
   pip install nose coverage
 script:
-  - nose
+  - nosetests
