@@ -9,4 +9,12 @@ __maintainer__ = "Eray Erdin"
 __email__ = "eraygezer.94@gmail.com"
 __status__ = "Prototype"
 
-__all__ = ["exceptives"]
+
+class __Typing:
+    Callable = callable
+    Any = None
+
+
+typing = __Typing
+
+__all__ = ["exceptives", "decorators", "typing"]

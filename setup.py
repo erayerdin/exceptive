@@ -8,7 +8,7 @@ with open("README.md", "r") as f:
 
 setup(
     name="exceptive",
-    version="0.1.1",
+    version="0.1.3",
     description="Exceptive is a Python library that makes exception handling more programmatic and debuggable.",
     long_description=LONG_DESC,
     long_description_content_type="text/markdown",
