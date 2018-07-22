@@ -48,12 +48,12 @@ class TestMethodicExceptive(unittest.TestCase):
         exc = Exceptive3()
 
         with self.assertRaises(AttributeError):
-            attr = exc("attribute_that_does_not_exist")
+            exc("attribute_that_does_not_exist")
 
     def test_overriding_except_AttributeError(self):
         exc = Exceptive4()
 
         try:
-            attr = exc("attribute_that_does_not_exist_again")
+            exc("attribute_that_does_not_exist_again")
         except Exception as e:
             self.fail(str(e))
