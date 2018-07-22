@@ -39,5 +39,5 @@ class MethodicExceptive(BaseExceptive):
                 exception_method_string = "except__{}".format(e1.__class__.__name__)
                 func = getattr(self, exception_method_string)
                 return func(e1)
-            except AttributeError as e2:
-                return self.except_else(e1)
+            except AttributeError:
+                return self.except__else(e1)
