@@ -1,28 +1,28 @@
 import unittest
 
-from exceptive import exceptives
+from exceptive import inheritance
 
 
 ##############
 # Exceptives #
 ##############
-class Exceptive1(exceptives.MethodicExceptive):
+class Exceptive1(inheritance.MethodicExceptive):
     def run(self, name):
         return "Hello "+name
 
 
 class Exceptive2(Exceptive1):
-    def except_TypeError(self, exception: TypeError):
+    def except__TypeError(self, exception: TypeError):
         return False
 
 
-class Exceptive3(exceptives.MethodicExceptive):
+class Exceptive3(inheritance.MethodicExceptive):
     def run(self, attribute: str):
         return getattr("Whatever", attribute)
 
 
 class Exceptive4(Exceptive3):
-    def except_AttributeError(self, exception: AttributeError):
+    def except__AttributeError(self, exception: AttributeError):
         return None
 
 #########

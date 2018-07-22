@@ -20,7 +20,7 @@ class BaseExceptive:
         """
         pass
 
-    def except_else(self, exception: BaseException) -> typing.Any:
+    def except__else(self, exception: BaseException) -> typing.Any:
         """
         This function runs if the exception is not registered.
 
@@ -36,7 +36,7 @@ class MethodicExceptive(BaseExceptive):
             return self.run(*args, **kwargs)
         except BaseException as e1:
             try:
-                exception_method_string = "except_{}".format(e1.__class__.__name__)
+                exception_method_string = "except__{}".format(e1.__class__.__name__)
                 func = getattr(self, exception_method_string)
                 return func(e1)
             except AttributeError as e2:

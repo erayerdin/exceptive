@@ -17,4 +17,4 @@ class __Typing:
 
 typing = __Typing
 
-__all__ = ["exceptives", "decorators", "typing"]
+__all__ = ["inheritance.py", "decorators", "typing"]
