@@ -13,9 +13,11 @@
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
 import os
-# import sys
+import sys
 # sys.path.insert(0, os.path.abspath('.'))
 import exceptive
+sys.path.insert(0, os.path.abspath(".."))
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__))))
 
 # -- Project information -----------------------------------------------------
 
