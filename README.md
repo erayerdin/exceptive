@@ -1,3 +1,8 @@
+ > This branch is kept alive for Googler's who found
+ [this](https://stackoverflow.com/questions/51463166/toctree-activates-current-page-and-main-page-on-sidebar)
+ question on Stackoverflow. The code in question is underdocs/source
+ directory.
+
 # Exceptive
 
 [![PyPI - Version](https://img.shields.io/pypi/v/exceptive.svg)](https://pypi.org/project/exceptive/)
