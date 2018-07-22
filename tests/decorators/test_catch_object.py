@@ -38,8 +38,8 @@ class Class3:
 class Class4:
     @catch_object(TypeError, "handle_type_error")
     @catch_object(AttributeError, "handle_attribute_error")
-    def hello_world(self, name: str, attr: str):  # attr here will be strip for test case
-        name = getattr(name, attr)()
+    def hello_world(self, name: str, attr: str, *args):  # attr here will be strip for test case
+        name = getattr(name, attr)(*args)
         return "Hello " + name + "!"
 
     def handle_type_error(self, e: TypeError):
