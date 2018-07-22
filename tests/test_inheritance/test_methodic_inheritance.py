@@ -7,7 +7,7 @@ from exceptive import inheritance
 # Exceptives #
 ##############
 class Exceptive1(inheritance.MethodicExceptive):
-    def run(self, name):
+    def run(self, name, *args, **kwargs):
         return "Hello "+name
 
 
@@ -17,7 +17,7 @@ class Exceptive2(Exceptive1):
 
 
 class Exceptive3(inheritance.MethodicExceptive):
-    def run(self, attribute: str):
+    def run(self, attribute: str, *args, **kwargs):
         return getattr("Whatever", attribute)
 
 
