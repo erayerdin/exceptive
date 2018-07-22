@@ -8,7 +8,7 @@ __license__ = "Apache License 2.0"
 __maintainer__ = "Eray Erdin"
 __email__ = "eraygezer.94@gmail.com"
 __status__ = "Prototype"
-__version__ = "0.1.7"
+__version__ = "0.1.8"
 
 class __Typing:
     Callable = callable
