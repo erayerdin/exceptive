@@ -1,3 +1,5 @@
+import exceptive
+
 try:
     from setuptools import setup
 except ImportError:
@@ -8,7 +10,7 @@ with open("README.md", "r") as f:
 
 setup(
     name="exceptive",
-    version="0.1.3",
+    version=exceptive.__version__,
     description="Exceptive is a Python library that makes exception handling more programmatic and debuggable.",
     long_description=LONG_DESC,
     long_description_content_type="text/markdown",
