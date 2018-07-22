@@ -21,7 +21,6 @@ setup(
     include_package_data=True,
     tests_require=["nose", "coverage", "tox"],
     zip_safe=False,
-    test_suite="tests.runtests",
     classifiers=[
         "Development Status :: 2 - Pre-Alpha",
         "Intended Audience :: Developers",
