@@ -15,7 +15,7 @@ def method2(name):
 
 @catch(TypeError, lambda e: 0)
 @catch(AttributeError, lambda e: 1)
-def method3(name, attr):  # attr here will be strip for test case
+def method3(name, attr, *args):  # attr here will be strip for test case
     name = getattr(name, attr)()
     return "Hello "+name+"!"
 

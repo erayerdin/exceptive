@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [0.1.x] - 2018-07-22
 ### Fixed
  - Wrong referencer in `__all__` variable in `exceptive/__init__.py`
+ - Call to `except__else` rather than `except_else` on `MethodicExceptive`
+ - 
 
 ## [0.1.7] - 2018-07-22
 ### Added
